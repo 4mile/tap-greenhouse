@@ -1,0 +1,64 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "users",
+      "stream": "users",
+      "schema": {
+        "type": ["null", "object"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ],
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ],
+          },
+          "date_modified": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time",
+          }
+        }
+      },
+      "metadata": [
+        {
+          "metadata": {
+            "inclusion": "available",
+            "table-key-properties": ["id"],
+            "selected-by-default": true,
+            "valid-replication-keys": ["date_modified"],
+            "schema-name": "users",
+          },
+          "breadcrumb": []
+        },
+        {
+          "metadata": {
+            "inclusion": "automatic",
+          },
+          "breadcrumb": ["properties", "id"]
+        },
+        {
+          "metadata": {
+            "inclusion": "available",
+            "selected-by-default": true,
+          },
+          "breadcrumb": ["properties", "name"]
+        },
+        {
+          "metadata": {
+            "inclusion": "automatic",
+          },
+          "breadcrumb": ["properties", "date_modified"]
+        }
+      ]
+    }
+  ]
+}
