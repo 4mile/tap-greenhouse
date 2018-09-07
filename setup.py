@@ -10,7 +10,7 @@ setup(
     classifiers=["Programming Language :: Python :: 3 :: Only"],
     py_modules=["tap_greenhouse"],
     install_requires=[
-        "singer-python>=5.0.12",
+        "singer-python==5.2.0",
         'requests==2.18.4',
         "pendulum==1.2.0",
     ],
